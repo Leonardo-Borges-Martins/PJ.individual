@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header {
+  width: 100%;
+  background: #000000;
+}
+
+.navbar {
+  width: 100%;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding-left: 80rem;
+
+}
+
+.links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.1s;
+
+}
+
+.links a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+header .logo-esquerda {
+  display: flex;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 10px rgb(30, 76, 145));
+}
+
+header .logo-esquerda img:hover {
+  transform: scale(1.15);
+  transition: .2s;
+}
+
+.logo-direita {
+  display: flex;
+  gap: 15px;
+  padding-right: 2rem;
+}
+
+.logo-direita img {
+  width: 50px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.logo-direita img:hover {
+  transform: scale(1.15);
+}
+
+
+.banner {
+  width: 99.2%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.filmes-container1 {
+  display: grid;
+  justify-content: left;
+  gap: 40px;
+  margin: 60px;
+  column-gap: normal;
+  flex-direction: column;
+}
+
+.filmes-container1 img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.filmes-container1 img:hover {
+  transform: scale(1.08);
+}
+
+.filmes-container2 {
+  display: grid;
+  justify-content: right;
+  grid-template-columns: 50%;
+  gap: 40px;
+  margin: 60px;
+  column-gap: normal;
+
+}
+
+.filmes-container2 img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+
+}
+
+.filmes-container2 img:hover {
+  transform: scale(1.08);
+}
+
+.botao-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background: #383739;
+  color: rgb(255, 255, 255);
+  padding-top: 5rem;
+}
+
+hr {
+  background: white;
+  color: rgb(0, 0, 0);
+  width: 115rem;
+}
+
+.redes img {
+  width: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+
+.footer-mensagem {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}

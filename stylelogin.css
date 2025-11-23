@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  background: #dbba00;
+  font-family: Arial, sans-serif;
+}
+
+
+
+header {
+  width: 100%;
+  background: #dbba00;
+}
+
+.navbar {
+  width: 100%;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding-left: 80rem;
+
+}
+
+.links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.1s;
+
+}
+
+.links a:hover,
+.links .login {
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 600;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+header .logo-esquerda {
+  display: flex;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 10px rgb(30, 76, 145));
+}
+
+header .logo-esquerda img:hover {
+  transform: scale(1.15);
+  transition: .2s;
+}
+
+.logo-direita {
+  display: flex;
+  gap: 15px;
+  padding-right: 2rem;
+}
+
+.logo-direita img {
+  width: 50px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.logo-direita img:hover {
+  transform: scale(1.15);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 31% 35% 34%;
+  height: 700px;
+}
+
+.imgEsquerda,
+.meio,
+.imgDireita {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgEsquerda {
+  background: #dbba00;
+  width: 100%;
+  height: 105%;
+}
+
+.personagem {
+  width: 95%;
+  padding-bottom: 5rem;
+}
+
+.meio {
+  flex-direction: column;
+  background: #dbba00;
+  text-align: center;
+  width: 120%;
+  height: 88.8%;
+  justify-content: flex-start;
+  margin-top:180px;
+}
+
+.meio h1 {
+  color: rgb(0, 0, 0);
+  letter-spacing: 5px;
+  font-size: 50px;
+
+}
+
+div .cadas_info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+label {
+  text-align: left;
+  color: rgb(0, 0, 0);
+  border: 0;
+  font-size: 105%;
+  margin-top: 10px;
+}
+
+input {
+  background: #092036;
+  border: none;
+  height: 40px;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  padding-left: 10px;
+
+}
+
+.botao {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+  filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+}
+
+.botao img {
+  width: 100px;
+}
+
+.botao img:hover {
+  transform: scale(1.15);
+  transition: .2s;
+}
+
+.clique a{
+  color: rgb(0, 0, 0);
+  display: flex;
+  font-family: sans-serif;
+  margin-top: 40px;
+  align-items: flex-end;
+}
+
+.imgDireita .fundo {
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+}
+
+footer {
+  background: #383739;
+  color: rgb(255, 255, 255);
+  padding-top: 35rem;
+}
+
+hr {
+  background: white;
+  color: rgb(0, 0, 0);
+  width: 115rem;
+}
+
+.footer-mensagem {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.redes img {
+  width: 40px;
+  margin-left: 1px;
+  cursor: pointer;
+}
+
+.redes .p {
+  font-size: 100%;
+
+}
