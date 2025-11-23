@@ -77,6 +77,12 @@ header .logo-esquerda img:hover {
 .logo-direita img:hover {
   transform: scale(1.15);
 }
+.logoauto{
+  filter: drop-shadow(0 0 10px rgb(166, 49, 49));
+}
+.logodece{
+  filter: drop-shadow(0 0 10px rgb(73, 7, 131));
+}
 
 .container {
   display: grid;
@@ -143,32 +149,33 @@ input {
 }
 
 .botao {
-  display: flex;
-  gap: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   cursor: pointer;
   color: white;
-  background: transparent;
-  filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+
 }
+
+
 
 .botao img {
   width: 90px;
-}
-
-.botao img:hover {
-  transform: scale(1.15);
-  transition: .2s;
 
 }
 
-.clique a{
+.botao {
+  color: white;
+  background: transparent;
+  filter: drop-shadow(0 0 10px rgb(255, 0, 0));
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  transform: scale(1.05);
+}
+
+.clique {
   color: white;
   display: flex;
-  font-family: sans-serif;
-  margin-top: 35px;
-
 }
 
 

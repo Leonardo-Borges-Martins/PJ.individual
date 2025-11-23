@@ -108,7 +108,18 @@ header .logo-esquerda img:hover {
 .logo-direita img:hover {
   transform: scale(1.15);
 }
+.titulos{
+  display: flex;
+  
+}
 
+.logoauto {
+  filter: drop-shadow(0 0 10px rgb(166, 49, 49));
+}
+
+.logodece {
+  filter: drop-shadow(0 0 10px rgb(73, 7, 131));
+}
 
 .banner {
   width: 99.2%;
@@ -130,12 +141,17 @@ header .logo-esquerda img:hover {
   margin-top: 0px;
 }
 
-.filmes-container{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-width: 100%;
-height: 250vh;
+.wallpaper {
+  z-index: 0;
+  width: 50px;
+}
+
+.filmes-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 250vh;
 }
 
 .filmes-container1 {
@@ -154,11 +170,14 @@ height: 250vh;
   width: 300px;
   border-radius: 10px;
   transition: transform 0.3s;
+  cursor: pointer;
+  padding-left: 2rem;
 }
 
 .filmes-container1 img:hover {
   transform: scale(1.08);
 }
+
 .filmes-container2 {
   display: grid;
   justify-content: right;
@@ -168,18 +187,29 @@ height: 250vh;
   flex-direction: column;
   height: 100%;
   width: 50%;
+  cursor: pointer;
+  align-content: space-around  ;
 }
 
 .filmes-container2 img {
   width: 300px;
   border-radius: 10px;
   transition: transform 0.3s;
+  cursor: pointer;
+  padding-left: 2rem;
 }
 
 .filmes-container2 img:hover {
   transform: scale(1.08);
 }
 
+.box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  font-size: 20px;
+  font-family: sans-serif;
+}
 
 .botao-banner {
   display: flex;

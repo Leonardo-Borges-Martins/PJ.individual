@@ -6,9 +6,41 @@ body {
   text-align: center;
 }
 
+.links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding-left: 80rem;
+
+}
+
+.links a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.1s;
+}
+
+.links a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 500px;
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+
+}
+
+body .logos {
+  border: none;
+  width: 30%;
+  height: 50px;
+}
+
+
 header {
   width: 100%;
-  background: #000000;
+  background: #7ea9e6;
 }
 
 .navbar {
@@ -36,13 +68,12 @@ header {
   text-decoration: none;
   font-size: 16px;
   transition: 0.1s;
-
 }
 
 .links a:hover {
   cursor: pointer;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 17px;
   font-weight: 600;
   text-shadow: 0 0 10px rgb(255, 255, 255);
@@ -54,11 +85,10 @@ header .logo-esquerda {
   cursor: pointer;
   color: rgb(255, 255, 255);
   filter: drop-shadow(0 0 10px rgb(30, 76, 145));
-  
+
 }
 
 header .logo-esquerda img:hover {
-
   transform: scale(1.15);
   transition: .2s;
 }
@@ -85,72 +115,35 @@ header .logo-esquerda img:hover {
   filter: drop-shadow(0 0 10px rgb(73, 7, 131));
 }
 
-
-.banner {
-  width: 99.2%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px;
+.grafico-principal {
+    width: 60%;
+    height: 90%;
+   align-items: flex-end;
+    background-color: var(--branco);
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background-color: rgb(6, 6, 46);
 }
 
-.banner2 {
-  filter: brightness(50%); 
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+.botao1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0px;
-}
-
-.filmes-container1 {
-  display: grid;
   justify-content: left;
-  gap: 40px;
-  margin: 60px;
-  column-gap: normal;
-  flex-direction: column;
+  align-items: left;
+  color: green;
+  
 }
-
-.filmes-container1 img {
-  width: 200px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-}
-
-.filmes-container1 img:hover {
-  transform: scale(1.08);
-}
-
-.filmes-container2 {
-  display: grid;
-  justify-content: right;
-  grid-template-columns: 50%;
-  gap: 40px;
-  margin: 60px;
-  column-gap: normal;
-
-}
-
-.filmes-container2 img {
-  width: 200px;
-  border-radius: 10px;
-  transition: transform 0.3s;
-
-}
-
-.filmes-container2 img:hover {
-  transform: scale(1.08);
-}
-
-.botao-banner {
+.botao2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
+  color: red;
+  
+}
+.cadas_info{
+   display: flex;
+  justify-content: left;
+  align-items: left;
 }
 
 footer {

@@ -76,7 +76,12 @@ header .logo-esquerda img:hover {
 .logo-direita img:hover {
   transform: scale(1.15);
 }
-
+.logoauto{
+  filter: drop-shadow(0 0 10px rgb(166, 49, 49));
+}
+.logodece{
+  filter: drop-shadow(0 0 10px rgb(73, 7, 131));
+}
 
 .banner {
   width: 99.2%;

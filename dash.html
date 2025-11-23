@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login transformers</title>
+    <link rel="stylesheet" href="styledash.css">
+    <link rel="icon" href="imglogo1.png">
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navbar">
+
+            <div class="logo-esquerda">
+                <a href="index.html">
+                    <img src="transformers.png">
+                </a>
+            </div>
+
+            <ul class="links">
+
+                <li><a href="filmes.html">Filmes</a></li>
+                <li><a class="login" href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+            </ul>
+
+              <div class="logo-direita">
+       <div class="logoauto">
+         <a href="autobots.html"><img src="imglogo1.png"></a>
+       </div> <div class="logodece">
+         <a href="decepticons.html"><img src="imglogo2.png"></a>
+      </div>
+    </div>
+
+        </nav>
+    </header>
+
+
+    <main class="container">
+
+        <div class="imgEsquerda">
+            <img src="" class="personagem">
+        </div>
+
+        <div>
+        <div>
+
+      <div class="container container2">
+        <div class="grafico-principal">
+          <canvas id="grafico1"></canvas>
+        </div>
+</div>
+
+            <div class="cadas_info">
+                <select id="filmes">
+                    <option value="1">Transformers </option>
+                    <option value="2">Transformers: A Vingança dos Derrotados</option>
+                    <option value="3">Transformers: O Lado Oculto da Lua </option>
+                    <option value="4">Transformers 4 - A Era da Extinção </option>
+                    <option value="5">Transformers: O Último Cavaleiro </option>
+                    <option value="6">Bumblebee </option>
+                    <option value="7">Transformers: O Despertar das Feras </option>
+                    <option value="8">Transformers One</option>
+                </select>
+            </div>
+
+            <div class="botao1">
+                <button onclick=""></button>
+            </div>
+            <div class="botao2">
+                <button onclick=""></button>
+            </div>
+            
+
+        </div>
+    </main>
+
+    <footer>
+
+        <hr>
+        <div class="footer-mensagem">
+            <div class="contato">
+                <p><strong>CONTATO:</strong></p>
+                <p>11 9999-99999</p>
+                <p>leonardo.msantana@sptech.school</p>
+            </div>
+
+            <div class="redes">
+                <p>Minhas Redes Sociais</p>
+                <img src="inst.png">
+                <img src="face.png">
+                <img src="x.png">
+                <img src="youtube.png">
+                <img src="github.png">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+  const grafico1 = document.getElementById('grafico1');
+  
+  new Chart(grafico1, {
+    type: 'line',
+    data: {
+      labels: ['Transformers', 'Transformers: A Vingança dos Derrotados', 'Transformers: O Lado Oculto da Lua', 'Transformers 4 - A Era da Extinção', 'Transformers: O Último Cavaleiro','Bumblebee','Transformers: O Despertar das Feras','Transformers One',],
+      datasets: [{
+        label: 'Lucro',
+        data: [709, 836, 1123, 1105, 605,467,441,128],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: 'FILMES'
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    }
+  });
+
+</script>
